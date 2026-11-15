@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/************************** MAIN **************************/
+
+body {
+	background-color: #ffffff;
+    /* background-image: url(imgs/bg.gif);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+table, tr, td{
+	padding: 0;
+	margin: 0;
+	border: 0px solid #F4F4F4;
+	border-collapse: collapse;
+}
+img{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+p{
+    font-family: Georgia, serif;
+    font-size: x-small;
+    color: #000000;
+    color: #000000;
+    display: inline-block;
+    margin: 0;
+}
+i {
+	text-align: center;
+}
+h1{
+    font-family: Helvetica, Arial, "sans-serif";
+    font-size: small;
+    color: #000000;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+h2{
+    font-family: Georgia, serif;
+    font-size: x-small;
+    color: #909090;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+a{
+	color: #000000;
+	font-style: normal;
+	text-decoration: none;
+}
+a:hover{
+	color: #909090;
+}
+a:visited{
+	color: #00000;
+}
+select{
+	font-family: Georgia, serif;
+    font-size: x-small;
+    color: #000000;
+	border: inset #909090 thin;
+	border-radius: 0px;
+}
+/************************** ID TAGS  **************************/
+
+
+#main{
+	border: none;
+	border-collapse: collapse;
+}
+#navbar{
+		font-size: 0;
+	vertical-align: middle;
+}
+#mid{
+	vertical-align: middle;
+}
+#date{
+	font-size: xx-small;
+}
+
+/************************** CLASS TAGS  **************************/
+
+.talign{
+	vertical-align: top;
+	font-size: 0;
+}
+.inset{
+	padding: 3px;
+	border: inset #909090 thin;
+	display: inline-block;
+	vertical-align: middle;
+}
+.hov:hover{
+	opacity: 0.9;
+}
+.hide{
+	opacity: 0;
+}
+.desc{
+	font-family: Helvetica, Arial, "sans-serif";
+	color: #909090;
+	text-align: center;
+}
+.disabled{
+	background-color: black;
+}
+.disabled:hover{
+	opacity: 0.9;
+}
+@keyframes blink-smooth {
+  0%, 25%, 75%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.blink-smooth-element {
+  animation: blink-smooth 6s infinite linear;
+}
+.off-1{
+	animation-delay: -0.3s;
+}
+.off-2{
+	animation-delay: -1.1s;
+}
+.off-3{
+	animation-delay: -1.5s;
+}
+.off-4{
+	animation-delay: -2.2s;
+}
+#infob{
+	background-image: url("imgs/info-b.gif");
+}
+#infob:hover{
+	background-image: url("imgs/info-b-hov.gif");
+	cursor: pointer;
+}

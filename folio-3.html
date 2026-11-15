@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1.0">
+<link rel="icon" href="imgs/favicon.ico">
+<link rel="stylesheet" href="styles.css">
+<title>Folio</title>
+</head>
+
+<body oncontextmenu="return false;">
+	<br><br><br><br><br><br>
+		<table id="viewport" width="100%" height="100%" align="center"><tbody><tr><td class="talign"><center>
+			<table id="main" width="700px" height="550px"><tbody><tr><td>
+				<table><tbody>
+					<tr><td id="topbanner" width="700px" height="30px">
+						<table><tbody><tr><td id="nav" width="150px" height="30px"><center>
+                                <form name="myform">
+                                    <select name="dest" id="dest" onchange="window.location = this.value;">
+                                        <option selected value="contents.html">Waiting...</option>
+                                        <option value="index.html">=================</option>
+                                        <option value="index.html">Pinstick.com</option>
+                                        <option value="index.html">- Motel</option>
+                                        <option value="folio.html">- Folio</option>
+                                        <option value="info.html">- Info</option>
+                                        <option value="cafe.html">- Cyber Cafe</option>
+                                    </select>
+                                </form>	
+							</center></td><td id="header" width="400px" height="30px"><center>
+								<p style="color:#909090"><i>You have located your browser at thisbloodysite.com ... click to enlarge.</i></p>
+								
+							</center></td><td id="date" width="150px" height="30px"><center>
+							<div class="inset" style="width: 150px;">
+								<!--<script language="javascript">
+                                    var now = new Date();
+                                    var yr = now.getYear();
+                                    var mName = now.getMonth() + 1;
+                                    var dName = now.getDay() + 1;
+                                    var dayNr = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                                    if(dName==1) Day = "Sunday";
+                                    if(dName==2) Day = "Monday";
+                                    if(dName==3) Day = "Tuesday";
+                                    if(dName==4) Day = "Wednesday";
+                                    if(dName==5) Day = "Thursday";
+                                    if(dName==6) Day = "Friday";
+                                    if(dName==7) Day = "Saturday";
+                                    if(mName==1) Month="January";
+                                    if(mName==2) Month="February";
+                                    if(mName==3) Month="March";
+                                    if(mName==4) Month="April";
+                                    if(mName==5) Month="May";
+                                    if(mName==6) Month="June";
+                                    if(mName==7) Month="July";
+                                    if(mName==8) Month="August";
+                                    if(mName==9) Month="September";
+                                    if(mName==10) Month="October";
+                                    if(mName==11) Month="November";
+                                    if(mName==12) Month="December";
+                                    if(navigator.appName=="Netscape"){
+                                    var todaysDate =(
+                                           Day
+                                           + ", "
+                                           + Month
+                                           + " "
+                                           + dayNr
+                                           + ", "
+                                           + (1900
+                                           + yr)
+                                           );} else {
+                                    var todaysDate =(
+                                           Day
+                                           + ", "
+                                           + Month
+                                           + " "
+                                           + dayNr
+                                           + ", "
+                                           + yr
+                                           );
+                                           }
+                                    document.write("<p>"+todaysDate+"</p>");
+								</script>-->
+								<p>Status: Obscured</p>
+								</div>
+							</center></td></tr></tbody></table>
+					</td></tr>
+					<tr><td id="top2" width="700px" height="50px">
+						<img src="imgs/top-folio.gif" width="700px" alt="An old warning">
+					</td></tr>
+					<tr><td id="folioimg" width="700px" height="350px">
+						<table><tbody><tr><td id="info" width="150px" height="350px">
+								<a href="javascript:newWindow('folioimg-cli.html')"><img src="imgs/foliothumb-cli.gif" height="350px" width="700px" class="hov" class="hov"></a>
+						</td></tr></tbody></table>
+					</td></tr>
+					<tr><td id="foliodesc" width="700px" height="90px"><center>
+						<table><tbody><tr>
+										<td id="back" width="70px" height="70px"><center>
+											<a href="folio-2.html"><img src="imgs/back.gif" width="50px" height="50px" alt="Go back"></a>
+										</center></td>
+										<td id="desc" width="560px" height="70px"><center>
+											<p class="desc">This is artwork &amp; other visual materials for an elusive record called ‘Here Comes the Flood’ by a band called Clients, who supposedly formed in the city of Hobart, Tasmania, sometime in 2013. This project included album artwork and design, record packaging, promotional material, merchandising, and a static website. The album cover is made of gouache paints and correction fluid; the website is made of html.</p>
+								  </center></td>
+										<td id="forward" width="70px" height="70px"><center>
+											<a href="folio-4.html"><img src="imgs/forward.gif" width="50px" height="50px" alt="Go forward" class="hov"></a>
+										</center></td>
+									</tr></tbody></table>
+					</center></td></tr>
+					<tr><td id="navbar" width="700px" height="30px"><center>
+						<div class="inset" style="width:240px; padding: 5px;">
+						<p style="color:#909090;">
+							{ <a href="index.html">Motel</a> }
+							{ <a href="folio.html">Folio</a> }
+							{ <a href="contents.html">Info</a> }
+							{ <a href="cybercafe.html">Cyber Cafe</a> }
+						</p>
+						</div>
+					</center></td></tr>
+				</tbody></table>
+			</td></tr></tbody></table>
+		</center></td></tr></tbody></table>
+<br><br>
+<center><table width="300px"><tbody><tr><td><p style="color: #C9C9C9; font-size: 6pt"><i>The right of nobody to be identified as the author of this work has been asserted in accordance with the Copyright, Designs and Patents Act 1988.</i></p></td></tr></tbody></table></center>
+	
+<script>
+let myWindow;
+function closeWin() {
+  myWindow.close();
+}
+function newWindow(newContent)
+ {
+  winContent = window.open(newContent, 'nextWin', "width=1500, height=900")         
+ }
+</script>
+	
+</body>
+</html>
